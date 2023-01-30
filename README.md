@@ -3,7 +3,15 @@
 A collection of [onecfg](https://crates.io/crates/onecfg) config files for
 quickly setting up TypeScript or Rust projects.
 
-## [EditorConfig](https://editorconfig.org)
+## Examples
+
+- https://github.com/clebert/aws-simple/blob/master/onecfg.json
+- https://github.com/clebert/onecfg-lib/blob/main/onecfg.json
+- https://github.com/clebert/onecfg-rust/blob/main/onecfg.json
+
+## Configs
+
+### [EditorConfig](https://editorconfig.org)
 
 <details>
   <summary>onecfg config file</summary>
@@ -18,7 +26,7 @@ quickly setting up TypeScript or Rust projects.
 
 </details>
 
-## [ESLint](https://eslint.org)
+### [ESLint](https://eslint.org)
 
 The rules are designed for ECMAScript modules and prohibit CommonJS.
 
@@ -51,7 +59,7 @@ The rules are designed for ECMAScript modules and prohibit CommonJS.
 
 </details>
 
-## [Git](https://git-scm.com)
+### [Git](https://git-scm.com)
 
 <details>
   <summary>onecfg config file</summary>
@@ -66,7 +74,7 @@ The rules are designed for ECMAScript modules and prohibit CommonJS.
 
 </details>
 
-## [Jest](https://jestjs.io)
+### [Jest](https://jestjs.io)
 
 The config is designed for ECMAScript modules and requires the
 `--experimental-vm-modules` Node.js flag.
@@ -99,7 +107,7 @@ The config is designed for ECMAScript modules and requires the
 
 </details>
 
-## [Node.js](https://nodejs.org/en/)
+### [Node.js](https://nodejs.org/en/)
 
 Version 18.
 
@@ -116,7 +124,7 @@ Version 18.
 
 </details>
 
-## [Preact](https://preactjs.com)
+### [Preact](https://preactjs.com)
 
 Unlike React, Preact requires patches to the TypeScript and SWC configurations.
 
@@ -140,7 +148,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configurations.
 
 </details>
 
-## [Prettier](https://prettier.io)
+### [Prettier](https://prettier.io)
 
 <details>
   <summary>onecfg config file</summary>
@@ -172,7 +180,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configurations.
 
 </details>
 
-## [Rust](https://www.rust-lang.org)
+### [Rust](https://www.rust-lang.org)
 
 <details>
   <summary>onecfg config file</summary>
@@ -187,7 +195,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configurations.
 
 </details>
 
-## [SWC](https://swc.rs)
+### [SWC](https://swc.rs)
 
 A config for ES2022 and ECMAScript modules.
 
@@ -211,7 +219,7 @@ A config for ES2022 and ECMAScript modules.
 
 </details>
 
-## [TypeScript](https://www.typescriptlang.org)
+### [TypeScript](https://www.typescriptlang.org)
 
 A strict config for ES2022 and ECMAScript modules.
 
@@ -251,7 +259,7 @@ A strict config for ES2022 and ECMAScript modules.
 
 </details>
 
-## [Visual Studio Code](https://code.visualstudio.com)
+### [Visual Studio Code](https://code.visualstudio.com)
 
 <details>
   <summary>onecfg config file</summary>
