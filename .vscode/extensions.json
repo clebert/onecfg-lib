@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "bodil.prettier-toml",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode"
+  ]
+}
