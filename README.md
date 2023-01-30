@@ -127,7 +127,7 @@ Version 18.
 
 ### [Preact](https://preactjs.com)
 
-Unlike React, Preact requires patches to the TypeScript and SWC configurations.
+Unlike React, Preact requires patches to the TypeScript and SWC configs.
 
 <details>
   <summary>onecfg config file</summary>
