@@ -11,7 +11,7 @@ quickly setting up TypeScript or Rust projects.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-editorconfig.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-editorconfig.json"
   ]
 }
 ```
@@ -28,7 +28,7 @@ The rules are designed for ECMAScript modules and prohibit CommonJS.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-eslint.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-eslint.json"
   ]
 }
 ```
@@ -59,7 +59,7 @@ The rules are designed for ECMAScript modules and prohibit CommonJS.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-git.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-git.json"
   ]
 }
 ```
@@ -77,7 +77,7 @@ The config is designed for ECMAScript modules and requires the
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-jest.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-jest.json"
   ]
 }
 ```
@@ -109,7 +109,7 @@ Version 18.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-node.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-node.json"
   ]
 }
 ```
@@ -126,7 +126,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configurations.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-preact.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-preact.json"
   ]
 }
 ```
@@ -148,7 +148,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configurations.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-prettier.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-prettier.json"
   ]
 }
 ```
@@ -180,7 +180,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configurations.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-rust.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust.json"
   ]
 }
 ```
@@ -197,7 +197,7 @@ A config for ES2022 and ECMAScript modules.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-swc.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-swc.json"
   ]
 }
 ```
@@ -221,9 +221,9 @@ A strict config for ES2022 and ECMAScript modules.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-typescript.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-typescript-emit.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-typescript-eslint.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript.json",
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-emit.json",
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-eslint.json"
   ]
 }
 ```
@@ -259,7 +259,7 @@ A strict config for ES2022 and ECMAScript modules.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/std/onecfg-vscode.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json"
   ]
 }
 ```
