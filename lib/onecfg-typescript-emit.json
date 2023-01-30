@@ -16,7 +16,8 @@
             "sourceMap": true,
             "incremental": true
           }
-        }
+        },
+        "priority": -1
       }
     ],
     "tsconfig.json": [

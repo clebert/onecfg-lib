@@ -8,7 +8,8 @@
         "value": {
           "extends": "./tsconfig.base.json",
           "include": ["src/**/*.ts", "src/**/*.tsx"]
-        }
+        },
+        "priority": -1
       }
     ],
     ".eslintrc.json": [

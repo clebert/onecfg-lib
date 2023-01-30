@@ -67,7 +67,8 @@
               "rules": {"quotes": ["error", "single"]}
             }
           ]
-        }
+        },
+        "priority": -1
       }
     ],
     ".prettierignore": [

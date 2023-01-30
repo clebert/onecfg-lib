@@ -28,7 +28,8 @@
             "noErrorTruncation": true,
             "pretty": true
           }
-        }
+        },
+        "priority": -1
       }
     ],
     "tsconfig.json": [
@@ -41,7 +42,8 @@
             "noEmit": true,
             "checkJs": true
           }
-        }
+        },
+        "priority": -1
       }
     ],
     "jest.config.json": [
@@ -54,8 +56,7 @@
       },
       {
         "value": {"testMatch": ["**/src/**/*.test.{ts,tsx}"]},
-        "array_merge": "replace",
-        "priority": 1
+        "array_merge": "replace"
       }
     ],
     ".prettierignore": [

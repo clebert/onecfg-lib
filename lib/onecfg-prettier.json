@@ -4,6 +4,12 @@
     ".prettierrc.json": {"format": "json"}
   },
   "patches": {
+    ".prettierignore": [
+      {
+        "value": ["/.prettierrc.json"],
+        "priority": -1
+      }
+    ],
     ".prettierrc.json": [
       {
         "value": {
@@ -13,12 +19,8 @@
           "quoteProps": "consistent",
           "singleQuote": true,
           "trailingComma": "all"
-        }
-      }
-    ],
-    ".prettierignore": [
-      {
-        "value": ["/.prettierrc.json"]
+        },
+        "priority": -1
       }
     ],
     ".eslintrc.json": [

@@ -6,7 +6,7 @@
     ".node-version": [
       {
         "value": ["18"],
-        "array_merge": "replace"
+        "priority": -1
       }
     ],
     ".gitignore": [

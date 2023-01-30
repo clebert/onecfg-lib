@@ -9,7 +9,8 @@
           "jsc": {"target": "es2022"},
           "module": {"type": "es6"},
           "sourceMaps": true
-        }
+        },
+        "priority": -1
       }
     ],
     ".prettierignore": [

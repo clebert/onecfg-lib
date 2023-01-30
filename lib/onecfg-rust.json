@@ -5,7 +5,8 @@
   "patches": {
     "rustfmt.toml": [
       {
-        "value": {"max_width": 120, "use_small_heuristics": "max"}
+        "value": {"max_width": 120, "use_small_heuristics": "max"},
+        "priority": -1
       }
     ],
     ".editorconfig": [

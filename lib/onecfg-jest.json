@@ -18,7 +18,8 @@
               "statements": 100
             }
           }
-        }
+        },
+        "priority": -1
       }
     ],
     "tsconfig.json": [
