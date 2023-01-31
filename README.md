@@ -189,7 +189,8 @@ Unlike React, Preact requires patches to the TypeScript and SWC configs.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust.json",
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust-github.json"
   ]
 }
 ```
