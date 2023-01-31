@@ -28,13 +28,16 @@
     ],
     ".vscode/extensions.json": [
       {
-        "value": {"recommendations": ["rust-lang.rust-analyzer"]}
+        "value": {
+          "recommendations": ["bodil.prettier-toml", "rust-lang.rust-analyzer"]
+        }
       }
     ],
     ".vscode/settings.json": [
       {
         "value": {
           "[rust]": {"editor.defaultFormatter": "rust-lang.rust-analyzer"},
+          "[toml]": {"editor.defaultFormatter": "bodil.prettier-toml"},
           "editor.formatOnSave": true,
           "editor.rulers": [120],
           "rust-analyzer.check.allTargets": true,

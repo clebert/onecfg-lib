@@ -31,7 +31,7 @@
     ".vscode/extensions.json": [
       {
         "value": {
-          "recommendations": ["bodil.prettier-toml", "esbenp.prettier-vscode"]
+          "recommendations": ["esbenp.prettier-vscode"]
         }
       }
     ],
@@ -52,9 +52,6 @@
           },
           "[json]": {
             "editor.defaultFormatter": "esbenp.prettier-vscode"
-          },
-          "[toml]": {
-            "editor.defaultFormatter": "bodil.prettier-toml"
           },
           "[typescript]": {
             "editor.defaultFormatter": "esbenp.prettier-vscode"
