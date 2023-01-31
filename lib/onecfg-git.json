@@ -1,5 +1,5 @@
 {
   "defines": {
-    ".gitignore": {"format": "text"}
+    ".gitignore": {"format": "ignorefile"}
   }
 }

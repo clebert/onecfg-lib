@@ -1,6 +1,6 @@
 {
   "defines": {
-    ".prettierignore": {"format": "text"},
+    ".prettierignore": {"format": "ignorefile"},
     ".prettierrc.json": {"format": "json"}
   },
   "patches": {

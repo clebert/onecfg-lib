@@ -1,6 +1,6 @@
 {
   "defines": {
-    ".eslintignore": {"format": "text"},
+    ".eslintignore": {"format": "ignorefile"},
     ".eslintrc.json": {"format": "json"}
   },
   "patches": {
