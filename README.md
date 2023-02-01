@@ -1,7 +1,7 @@
 # onecfg-lib
 
-A collection of [onecfg](https://crates.io/crates/onecfg) config files for
-quickly setting up TypeScript or Rust projects.
+A collection of [onecfg](https://crates.io/crates/onecfg) files for quickly
+setting up TypeScript or Rust projects.
 
 ## Examples
 
@@ -15,7 +15,7 @@ quickly setting up TypeScript or Rust projects.
 ### [EditorConfig](https://editorconfig.org)
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -32,7 +32,7 @@ quickly setting up TypeScript or Rust projects.
 The rules are designed for ECMAScript modules and prohibit CommonJS.
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -63,7 +63,7 @@ The rules are designed for ECMAScript modules and prohibit CommonJS.
 ### [Git](https://git-scm.com)
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -81,7 +81,7 @@ The config is designed for ECMAScript modules and requires the
 `--experimental-vm-modules` Node.js flag.
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -113,7 +113,7 @@ The config is designed for ECMAScript modules and requires the
 Version 18.
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -130,7 +130,7 @@ Version 18.
 Unlike React, Preact requires patches to the TypeScript and SWC configs.
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -152,7 +152,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configs.
 ### [Prettier](https://prettier.io)
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -184,7 +184,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configs.
 ### [Rust](https://www.rust-lang.org)
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -202,7 +202,7 @@ Unlike React, Preact requires patches to the TypeScript and SWC configs.
 A config for ES2022 and ECMAScript modules.
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -226,7 +226,7 @@ A config for ES2022 and ECMAScript modules.
 A strict config for ES2022 and ECMAScript modules.
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
@@ -264,7 +264,7 @@ A strict config for ES2022 and ECMAScript modules.
 ### [Visual Studio Code](https://code.visualstudio.com)
 
 <details>
-  <summary>onecfg config file</summary>
+  <summary>onecfg file</summary>
 
 ```json
 {
