@@ -5,7 +5,7 @@
   "patches": {
     "rustfmt.toml": [
       {
-        "value": {"max_width": 120, "use_small_heuristics": "max"},
+        "value": {"max_width": 120, "use_small_heuristics": "Max"},
         "priority": -1
       }
     ],
@@ -29,7 +29,10 @@
     ".vscode/extensions.json": [
       {
         "value": {
-          "recommendations": ["bodil.prettier-toml", "rust-lang.rust-analyzer"]
+          "recommendations": [
+            "rust-lang.rust-analyzer",
+            "tamasfe.even-better-toml"
+          ]
         }
       }
     ],
@@ -37,7 +40,7 @@
       {
         "value": {
           "[rust]": {"editor.defaultFormatter": "rust-lang.rust-analyzer"},
-          "[toml]": {"editor.defaultFormatter": "bodil.prettier-toml"},
+          "[toml]": {"editor.defaultFormatter": "tamasfe.even-better-toml"},
           "editor.formatOnSave": true,
           "editor.rulers": [120],
           "rust-analyzer.check.allTargets": true,
