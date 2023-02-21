@@ -50,6 +50,11 @@
       {
         "value": ["/tsconfig.eslint.json"]
       }
+    ],
+    ".vscode/settings.json": [
+      {
+        "value": {"files.exclude": {"tsconfig.eslint.json": true}}
+      }
     ]
   }
 }

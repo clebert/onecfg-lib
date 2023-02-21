@@ -39,6 +39,11 @@
       {
         "value": ["/lib", "/tsconfig.emit.json"]
       }
+    ],
+    ".vscode/settings.json": [
+      {
+        "value": {"files.exclude": {"tsconfig.emit.json": true}}
+      }
     ]
   }
 }

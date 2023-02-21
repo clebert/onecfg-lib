@@ -26,7 +26,10 @@
     ],
     ".vscode/settings.json": [
       {
-        "value": {"editor.formatOnSave": true}
+        "value": {
+          "editor.formatOnSave": true,
+          "files.exclude": {".editorconfig": true}
+        }
       }
     ]
   }

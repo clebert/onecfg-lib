@@ -27,6 +27,15 @@
   "editor.rulers": [
     80
   ],
+  "files.exclude": {
+    ".editorconfig": true,
+    ".gitignore": true,
+    ".prettierignore": true,
+    ".prettierrc.json": true,
+    ".vscode": true,
+    ".vscode/extensions.json": true,
+    ".vscode/settings.json": true
+  },
   "json.schemaDownload.enable": true,
   "json.schemas": [
     {

@@ -1,8 +1,8 @@
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-editorconfig.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-git.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-prettier.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json"
+    "file://lib/onecfg-editorconfig.json",
+    "file://lib/onecfg-git.json",
+    "file://lib/onecfg-prettier.json",
+    "file://lib/onecfg-vscode.json"
   ]
 }

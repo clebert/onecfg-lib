@@ -13,6 +13,11 @@
     ".vscode/settings.json": [
       {
         "value": {
+          "files.exclude": {
+            ".vscode": true,
+            ".vscode/extensions.json": true,
+            ".vscode/settings.json": true
+          },
           "json.schemaDownload.enable": true,
           "json.schemas": [
             {

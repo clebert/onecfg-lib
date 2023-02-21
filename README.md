@@ -269,7 +269,8 @@ A strict config for ES2022 and ECMAScript modules.
 ```json
 {
   "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json"
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json",
+    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode-debug.json"
   ]
 }
 ```

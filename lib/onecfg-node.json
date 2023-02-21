@@ -23,6 +23,11 @@
       {
         "value": {"recommendations": ["eg2.vscode-npm-script"]}
       }
+    ],
+    ".vscode/settings.json": [
+      {
+        "value": {"files.exclude": {".node-version": true}}
+      }
     ]
   }
 }

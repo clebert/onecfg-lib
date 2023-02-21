@@ -41,6 +41,11 @@
       {
         "value": ["/coverage", "/jest.config.json"]
       }
+    ],
+    ".vscode/settings.json": [
+      {
+        "value": {"files.exclude": {"jest.config.json": true}}
+      }
     ]
   }
 }

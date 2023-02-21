@@ -1,5 +1,12 @@
 {
   "defines": {
     ".gitignore": {"format": "ignorefile"}
+  },
+  "patches": {
+    ".vscode/settings.json": [
+      {
+        "value": {"files.exclude": {".gitignore": true}}
+      }
+    ]
   }
 }

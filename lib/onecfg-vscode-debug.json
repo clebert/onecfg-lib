@@ -1,0 +1,10 @@
+{
+  "patches": {
+    ".vscode/settings.json": [
+      {
+        "value": {"files.exclude": null},
+        "priority": 1
+      }
+    ]
+  }
+}

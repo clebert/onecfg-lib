@@ -63,7 +63,8 @@
             "editor.defaultFormatter": "esbenp.prettier-vscode"
           },
           "editor.formatOnSave": true,
-          "editor.rulers": [80]
+          "editor.rulers": [80],
+          "files.exclude": {".prettierignore": true, ".prettierrc.json": true}
         }
       }
     ]

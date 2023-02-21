@@ -17,6 +17,11 @@
       {
         "value": ["/.swcrc"]
       }
+    ],
+    ".vscode/settings.json": [
+      {
+        "value": {"files.exclude": {".swcrc": true}}
+      }
     ]
   }
 }

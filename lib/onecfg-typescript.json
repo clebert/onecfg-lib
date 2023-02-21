@@ -73,6 +73,7 @@
       {
         "value": {
           "editor.codeActionsOnSave": {"source.addMissingImports": true},
+          "files.exclude": {"tsconfig.base.json": true, "tsconfig.json": true},
           "typescript.tsdk": "node_modules/typescript/lib"
         }
       }
