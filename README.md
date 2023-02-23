@@ -7,7 +7,6 @@ setting up TypeScript or Rust projects.
 
 - https://github.com/clebert/aws-simple/blob/master/onecfg.json
 - https://github.com/clebert/bookmark.wtf/blob/main/onecfg.json
-- https://github.com/clebert/onecfg-lib/blob/main/onecfg.json
 - https://github.com/clebert/onecfg-rust/blob/main/onecfg.json
 
 ## Configs
