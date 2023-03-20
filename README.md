@@ -1,7 +1,7 @@
 # onecfg-lib
 
-A collection of [onecfg](https://crates.io/crates/onecfg) files for quickly
-setting up TypeScript or Rust projects.
+> A collection of [onecfg](https://crates.io/crates/onecfg) files for quickly
+> setting up TypeScript or Rust projects.
 
 ## Examples
 
@@ -17,7 +17,7 @@ setting up TypeScript or Rust projects.
 
 - [onecfg-eslint.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-eslint.json)
 
-### npm Dependencies
+### npm dependencies
 
 ```json
 {
@@ -35,7 +35,7 @@ setting up TypeScript or Rust projects.
 
 - [onecfg-jest.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-jest.json)
 
-### npm Dependencies
+### npm dependencies
 
 ```json
 {
@@ -56,7 +56,7 @@ setting up TypeScript or Rust projects.
 
 - [onecfg-prettier.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-prettier.json)
 
-### npm Dependencies
+### npm dependencies
 
 ```json
 {
@@ -74,7 +74,7 @@ setting up TypeScript or Rust projects.
 
 - [onecfg-swc.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-swc.json)
 
-### npm Dependencies
+### npm dependencies
 
 ```json
 {
@@ -88,7 +88,7 @@ setting up TypeScript or Rust projects.
 - [onecfg-typescript-emit.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-emit.json)
 - [onecfg-typescript-eslint.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-eslint.json)
 
-### npm Dependencies
+### npm dependencies
 
 ```json
 {
