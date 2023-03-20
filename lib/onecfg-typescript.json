@@ -19,7 +19,7 @@
             "strict": true,
             "module": "node16",
             "moduleResolution": "node16",
-            "importsNotUsedAsValues": "error",
+            "verbatimModuleSyntax": true,
             "esModuleInterop": true,
             "forceConsistentCasingInFileNames": true,
             "isolatedModules": true,
@@ -35,7 +35,7 @@
     "tsconfig.json": [
       {
         "value": {
-          "extends": "./tsconfig.base.json",
+          "extends": ["./tsconfig.base.json"],
           "include": ["**/*"],
           "compilerOptions": {
             "resolveJsonModule": true,

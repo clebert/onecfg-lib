@@ -52,7 +52,7 @@
           },
           "overrides": [
             {
-              "files": ["**/*.cjs"],
+              "files": ["**/*.cjs", "**/*.md/*.cjs"],
               "parserOptions": {"sourceType": "script"},
               "rules": {
                 "import/no-commonjs": "off",
@@ -61,11 +61,7 @@
               }
             },
             {"files": ["**/*.mjs"], "parserOptions": {"sourceType": "module"}},
-            {"files": ["**/*.md"], "processor": "markdown/markdown"},
-            {
-              "files": ["**/*.md/*.js", "**/*.md/*.jsx"],
-              "rules": {"quotes": ["error", "single"]}
-            }
+            {"files": ["**/*.md"], "processor": "markdown/markdown"}
           ]
         },
         "priority": -1
