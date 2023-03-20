@@ -9,269 +9,97 @@ setting up TypeScript or Rust projects.
 - https://github.com/clebert/bookmark.wtf/blob/main/onecfg.json
 - https://github.com/clebert/onecfg-rust/blob/main/onecfg.json
 
-## Configs
+## EditorConfig
 
-### [EditorConfig](https://editorconfig.org)
+- [onecfg-editorconfig.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-editorconfig.json)
 
-<details>
-  <summary>onecfg file</summary>
+## ESLint
 
-```json
-{
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-editorconfig.json"
-  ]
-}
-```
+- [onecfg-eslint.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-eslint.json)
 
-</details>
-
-### [ESLint](https://eslint.org)
-
-The rules are designed for ECMAScript modules and prohibit CommonJS.
-
-<details>
-  <summary>onecfg file</summary>
+### npm Dependencies
 
 ```json
 {
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-eslint.json"
-  ]
+  "eslint": "^8.36.0",
+  "eslint-plugin-import": "^2.27.5",
+  "eslint-plugin-markdown": "^3.0.0"
 }
 ```
 
-</details>
+## Git
 
-<details>
-  <summary>npm dependencies</summary>
+- [onecfg-git.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-git.json)
 
-- [`eslint`](https://www.npmjs.com/package/eslint)
-- [`eslint-plugin-import`](https://www.npmjs.com/package/eslint-plugin-import)
-- [`eslint-plugin-markdown`](https://www.npmjs.com/package/eslint-plugin-markdown)
+## Jest
 
-</details>
+- [onecfg-jest.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-jest.json)
 
-<details>
-  <summary>npm scripts</summary>
-
-- **lint**: `eslint .`
-
-</details>
-
-### [Git](https://git-scm.com)
-
-<details>
-  <summary>onecfg file</summary>
+### npm Dependencies
 
 ```json
 {
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-git.json"
-  ]
+  "jest": "^29.5.0",
+  "@jest/globals": "^29.5.0"
 }
 ```
 
-</details>
+## Node.js
 
-### [Jest](https://jestjs.io)
+- [onecfg-node.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-node.json)
 
-The config is designed for ECMAScript modules and requires the
-`--experimental-vm-modules` Node.js flag.
+## Preact
 
-<details>
-  <summary>onecfg file</summary>
+- [onecfg-preact.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-preact.json)
+
+## Prettier
+
+- [onecfg-prettier.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-prettier.json)
+
+### npm Dependencies
 
 ```json
 {
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-jest.json"
-  ]
+  "prettier": "^2.8.4",
+  "eslint-config-prettier": "^8.7.0"
 }
 ```
 
-</details>
+## Rust
 
-<details>
-  <summary>npm dependencies</summary>
+- [onecfg-rust.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust.json)
+- [onecfg-rust-github.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust-github.json)
 
-- [`jest`](https://www.npmjs.com/package/jest)
-- [`@jest/globals`](https://www.npmjs.com/package/@jest/globals)
+## SWC
 
-</details>
+- [onecfg-swc.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-swc.json)
 
-<details>
-  <summary>npm scripts</summary>
-
-- **test**: `NODE_OPTIONS=--experimental-vm-modules jest --silent`
-
-</details>
-
-### [Node.js](https://nodejs.org/en/)
-
-Version 18.
-
-<details>
-  <summary>onecfg file</summary>
+### npm Dependencies
 
 ```json
 {
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-node.json"
-  ]
+  "@swc/core": "^1.3.41"
 }
 ```
 
-</details>
+## TypeScript
 
-### [Preact](https://preactjs.com)
+- [onecfg-typescript.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript.json)
+- [onecfg-typescript-emit.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-emit.json)
+- [onecfg-typescript-eslint.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-eslint.json)
 
-Unlike React, Preact requires patches to the TypeScript and SWC configs.
-
-<details>
-  <summary>onecfg file</summary>
+### npm Dependencies
 
 ```json
 {
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-preact.json"
-  ]
+  "typescript": "^5.0.2",
+  "@swc/jest": "^0.2.24",
+  "@typescript-eslint/eslint-plugin": "^5.55.0",
+  "@typescript-eslint/parser": "^5.55.0"
 }
 ```
 
-</details>
+## Visual Studio Code
 
-<details>
-  <summary>npm dependencies</summary>
-
-- [`preact`](https://www.npmjs.com/package/preact)
-
-</details>
-
-### [Prettier](https://prettier.io)
-
-<details>
-  <summary>onecfg file</summary>
-
-```json
-{
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-prettier.json"
-  ]
-}
-```
-
-</details>
-
-<details>
-  <summary>npm dependencies</summary>
-
-- [`prettier`](https://www.npmjs.com/package/prettier)
-- [`eslint-config-prettier`](https://www.npmjs.com/package/eslint-config-prettier)
-  (if `.eslintrc.json` is defined)
-
-</details>
-
-<details>
-  <summary>npm scripts</summary>
-
-- **check**: `prettier --check .`
-- **format**: `prettier --write .`
-
-</details>
-
-### [Rust](https://www.rust-lang.org)
-
-<details>
-  <summary>onecfg file</summary>
-
-```json
-{
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust-github.json"
-  ]
-}
-```
-
-</details>
-
-### [SWC](https://swc.rs)
-
-A config for ES2022 and ECMAScript modules.
-
-<details>
-  <summary>onecfg file</summary>
-
-```json
-{
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-swc.json"
-  ]
-}
-```
-
-</details>
-
-<details>
-  <summary>npm dependencies</summary>
-
-- [`@swc/core`](https://www.npmjs.com/package/@swc/core)
-
-</details>
-
-### [TypeScript](https://www.typescriptlang.org)
-
-A strict config for ES2022 and ECMAScript modules.
-
-<details>
-  <summary>onecfg file</summary>
-
-```json
-{
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-emit.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-eslint.json"
-  ]
-}
-```
-
-</details>
-
-<details>
-  <summary>npm dependencies</summary>
-
-- [`typescript`](https://www.npmjs.com/package/typescript)
-- [`@swc/jest`](https://www.npmjs.com/package/@swc/jest) (if `jest.config.json`
-  is defined)
-- [`@typescript-eslint/eslint-plugin`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
-  (if `.eslintrc.json` is defined)
-- [`@typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/parser)
-  (if `.eslintrc.json` is defined)
-
-</details>
-
-<details>
-  <summary>npm scripts</summary>
-
-- **check**: `tsc`
-- **emit**: `tsc --project tsconfig.emit.json`
-
-</details>
-
-### [Visual Studio Code](https://code.visualstudio.com)
-
-<details>
-  <summary>onecfg file</summary>
-
-```json
-{
-  "extends": [
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json",
-    "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode-debug.json"
-  ]
-}
-```
-
-</details>
+- [onecfg-vscode.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json)
+- [onecfg-vscode-debug.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode-debug.json)
