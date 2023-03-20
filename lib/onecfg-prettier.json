@@ -6,7 +6,7 @@
   "patches": {
     ".prettierignore": [
       {
-        "value": ["/.prettierrc.json"],
+        "value": ["/.prettierrc.json", "/LICENSE*"],
         "priority": -1
       }
     ],
