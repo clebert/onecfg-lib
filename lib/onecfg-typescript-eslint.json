@@ -50,6 +50,21 @@
                 "import/no-commonjs": "off",
                 "no-restricted-globals": "off"
               }
+            },
+            {
+              "files": [
+                "**/*.md/*.cts",
+                "**/*.md/*.mts",
+                "**/*.md/*.ts",
+                "**/*.md/*.tsx"
+              ],
+              "parserOptions": {"project": null},
+              "rules": {
+                "@typescript-eslint/await-thenable": "off",
+                "@typescript-eslint/no-floating-promises": "off",
+                "@typescript-eslint/promise-function-async": "off",
+                "@typescript-eslint/require-await": "off"
+              }
             }
           ]
         }
