@@ -9,12 +9,10 @@
 - https://github.com/clebert/bookmark.wtf/blob/main/onecfg.json
 - https://github.com/clebert/onecfg-rust/blob/main/onecfg.json
 
-## onecfg-editorconfig.json
+## [onecfg-editorconfig.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-editorconfig.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-editorconfig.json)
-file sets up an `.editorconfig` file and related settings for Visual Studio
-Code. The main aspects are:
+This onecfg file sets up an `.editorconfig` file and related settings for Visual
+Studio Code. The main aspects are:
 
 1. Defines the `.editorconfig` file with standard formatting settings.
 1. Recommends the `editorconfig.editorconfig` extension for Visual Studio Code
@@ -22,11 +20,10 @@ Code. The main aspects are:
 1. Enables auto-formatting on save and excludes the `.editorconfig` file from
    the file explorer in Visual Studio Code settings.
 
-## onecfg-eslint.json
+## [onecfg-eslint.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-eslint.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-eslint.json)
-file sets up ESLint-related settings for a project. The main aspects are:
+This onecfg file sets up ESLint-related settings for a project. The main aspects
+are:
 
 1. Defines `.eslintignore` and `.eslintrc.json` files.
 1. Configures ESLint rules in the `.eslintrc.json` file, including parser
@@ -49,24 +46,20 @@ file sets up ESLint-related settings for a project. The main aspects are:
 }
 ```
 
-## onecfg-git.json
+## [onecfg-git.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-git.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-git.json)
-file sets up a `.gitignore` file and related settings for Visual Studio Code.
-The main aspects are:
+This onecfg file sets up a `.gitignore` file and related settings for Visual
+Studio Code. The main aspects are:
 
 1. Defines the `.gitignore` file.
 1. Excludes the `.gitignore` file from the file explorer in Visual Studio Code
    settings.
 
-## onecfg-jest.json
+## [onecfg-jest.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-jest.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-jest.json)
-file sets up a `jest.config.json` file for Jest testing configurations and
-related settings for other tools, such as TypeScript, ESLint, Git, Prettier, and
-Visual Studio Code. The main aspects are:
+This onecfg file sets up a `jest.config.json` file for Jest testing
+configurations and related settings for other tools, such as TypeScript, ESLint,
+Git, Prettier, and Visual Studio Code. The main aspects are:
 
 1. Defines the `jest.config.json` file with specific settings for test matching,
    clearing and restoring mocks, collecting coverage, and coverage thresholds.
@@ -86,13 +79,11 @@ Visual Studio Code. The main aspects are:
 }
 ```
 
-## onecfg-node.json
+## [onecfg-node.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-node.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-node.json)
-file sets up a `.node-version` file and related settings for Node.js projects
-and other tools like Git, Prettier, and Visual Studio Code. The main aspects
-are:
+This onecfg file sets up a `.node-version` file and related settings for Node.js
+projects and other tools like Git, Prettier, and Visual Studio Code. The main
+aspects are:
 
 1. Defines the `.node-version` file containing the Node.js version (18).
 1. Adds the `node_modules` folder to the `.gitignore` file.
@@ -102,13 +93,11 @@ are:
 1. Excludes the `.node-version` file from the file explorer in Visual Studio
    Code settings.
 
-## onecfg-preact.json
+## [onecfg-preact.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-preact.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-preact.json)
-file sets up a TypeScript project to use Preact with React JSX syntax by
-modifying the `tsconfig.base.json` file and providing the necessary settings for
-the SWC compiler in the `.swcrc` file. The main aspects are:
+This onecfg file sets up a TypeScript project to use Preact with React JSX
+syntax by modifying the `tsconfig.base.json` file and providing the necessary
+settings for the SWC compiler in the `.swcrc` file. The main aspects are:
 
 1. Adds the `jsx` and `jsxImportSource` properties to the `compilerOptions`
    section of the `tsconfig.base.json` file to enable React JSX syntax and set
@@ -116,12 +105,10 @@ the SWC compiler in the `.swcrc` file. The main aspects are:
 1. Configures the SWC compiler in the `.swcrc` file to use Preact as the import
    source and enable the automatic JSX runtime.
 
-## onecfg-prettier.json
+## [onecfg-prettier.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-prettier.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-prettier.json)
-file sets up Prettier, a code formatter, for a project. It defines and
-configures `.prettierignore` and `.prettierrc.json` files, integrates with
+This onecfg file sets up Prettier, a code formatter, for a project. It defines
+and configures `.prettierignore` and `.prettierrc.json` files, integrates with
 ESLint, and updates the Visual Studio Code settings for various file types. The
 main aspects are:
 
@@ -149,12 +136,10 @@ main aspects are:
 }
 ```
 
-## onecfg-rust.json
+## [onecfg-rust.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust.json)
-file sets up Rust code formatting and linting tools, as well as Visual Studio
-Code settings for a Rust project. The main aspects are:
+This onecfg file sets up Rust code formatting and linting tools, as well as
+Visual Studio Code settings for a Rust project. The main aspects are:
 
 1. Defines the `rustfmt.toml` file.
 1. Configures Rust formatting settings in the `rustfmt.toml` file, such as
@@ -172,12 +157,10 @@ Code settings for a Rust project. The main aspects are:
    Analyzer settings such as enabling clippy, check features, check on save, and
    disabling inlay hints.
 
-## onecfg-rust-github.json
+## [onecfg-rust-github.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust-github.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-rust-github.json)
-file sets up a Continuous Integration (CI) pipeline for a Rust project using
-GitHub Actions. The main aspects are:
+This onecfg file sets up a Continuous Integration (CI) pipeline for a Rust
+project using GitHub Actions. The main aspects are:
 
 1. Defines the `.github/workflows/ci.yml` file.
 1. Configures the CI pipeline in the `.github/workflows/ci.yml` file with the
@@ -197,12 +180,10 @@ GitHub Actions. The main aspects are:
    to exclude the `.github` folder and the `.github/workflows/ci.yml` file from
    the file explorer.
 
-## onecfg-swc.json
+## [onecfg-swc.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-swc.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-swc.json)
-file sets up SWC, a super-fast JavaScript and TypeScript compiler, by defining
-and modifying the `.swcrc file`. The main aspects are:
+This onecfg file sets up SWC, a super-fast JavaScript and TypeScript compiler,
+by defining and modifying the `.swcrc file`. The main aspects are:
 
 1. Defines the `.swcrc` file.
 1. Configures the SWC settings in the `.swcrc` file with the following features:
@@ -221,12 +202,10 @@ and modifying the `.swcrc file`. The main aspects are:
 }
 ```
 
-## onecfg-typescript.json
+## [onecfg-typescript.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript.json)
-file sets up TypeScript and related settings for your project. The main aspects
-are:
+This onecfg file sets up TypeScript and related settings for your project. The
+main aspects are:
 
 1. Defines the `tsconfig.base.json` file with strict options, module resolution
    settings, and JSX support. It targets the `es2022` output.
@@ -260,13 +239,11 @@ are:
 }
 ```
 
-## onecfg-typescript-emit.json
+## [onecfg-typescript-emit.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-emit.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-emit.json)
-file adds a new TypeScript configuration called `tsconfig.emit.json` for
-emitting output files and makes changes to other configurations accordingly. The
-main aspects are:
+This onecfg file adds a new TypeScript configuration called `tsconfig.emit.json`
+for emitting output files and makes changes to other configurations accordingly.
+The main aspects are:
 
 1. Defines the `tsconfig.emit.json` file that extends the `tsconfig.base.json`
    file and sets the following options:
@@ -284,13 +261,11 @@ main aspects are:
 1. Updates the Visual Studio Code settings in the `.vscode/settings.json` file
    to exclude the `tsconfig.emit.json` file from the file explorer.
 
-## onecfg-typescript-eslint.json
+## [onecfg-typescript-eslint.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-eslint.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-typescript-eslint.json)
-file creates a new TypeScript configuration called `tsconfig.eslint.json`
-specifically for ESLint, and updates the ESLint and other configurations
-accordingly. The main aspects are:
+This onecfg file creates a new TypeScript configuration called
+`tsconfig.eslint.json` specifically for ESLint, and updates the ESLint and other
+configurations accordingly. The main aspects are:
 
 1. Defines the `tsconfig.eslint.json` file that extends the `tsconfig.base.json`
    file and includes all `.cts`, `.mts`, `.ts`, and `.tsx` files.
@@ -311,13 +286,11 @@ accordingly. The main aspects are:
 }
 ```
 
-## onecfg-vscode.json
+## [onecfg-vscode.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json)
-file sets up Visual Studio Code settings and extension recommendations by
-defining and modifying the `.vscode/extensions.json` and `.vscode/settings.json`
-files. The main aspects are:
+This onecfg file sets up Visual Studio Code settings and extension
+recommendations by defining and modifying the `.vscode/extensions.json` and
+`.vscode/settings.json` files. The main aspects are:
 
 1. Defines the `.vscode/extensions.json` and `.vscode/settings.json` files.
 1. Configures the Visual Studio Code extension recommendations in the
@@ -333,14 +306,12 @@ files. The main aspects are:
 1. Adds the `.vscode/extensions.json` and `.vscode/settings.json` files to the
    `.prettierignore` file.
 
-## onecfg-vscode-debug.json
+## [onecfg-vscode-debug.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode-debug.json)
 
-This
-[onecfg](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode-debug.json)
-file removes the `files.exclude` property from the `.vscode/settings.json` file
-by setting its value to `null` with a higher priority value. This change will
-cause all previously excluded files to be visible in the file explorer in Visual
-Studio Code.
+This onecfg file removes the `files.exclude` property from the
+`.vscode/settings.json` file by setting its value to `null` with a higher
+priority value. This change will cause all previously excluded files to be
+visible in the file explorer in Visual Studio Code.
 
 Please note that this will override any previous settings regarding excluded
 files in the `.vscode/settings.json` file, so you may need to add specific
