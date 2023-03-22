@@ -1,7 +1,7 @@
 # onecfg-lib
 
-> A collection of [onecfg](https://crates.io/crates/onecfg) files for quickly
-> setting up TypeScript or Rust projects.
+> A collection of [onecfg](https://crates.io/crates/onecfg) files specifically
+> designed to configure TypeScript and Rust projects.
 
 ## Example projects
 
