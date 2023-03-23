@@ -93,6 +93,48 @@ aspects are:
 1. Excludes the `.node-version` file from the file explorer in Visual Studio
    Code settings.
 
+## [onecfg-node-github.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-node-github.json)
+
+This onecfg file sets up a Continuous Integration (CI) pipeline for a Node.js
+project using GitHub Actions and makes changes to the `.prettierignore` and
+`.vscode/settings.json` files. The main aspects are:
+
+1. Defines the `.github/workflows/ci.yml` file.
+1. Configures the CI pipeline in the `.github/workflows/ci.yml` file with the
+   following features:
+   - Triggers the CI on `push` and `pull_request` events.
+   - Defines a CI job that runs on the latest version of Ubuntu.
+   - Specifies the steps for the CI job, which include:
+     - Checking out the repository using the `actions/checkout@v3` action.
+     - Setting up the Node.js environment using the `actions/setup-node@v3`
+       action with the node version specified in the `.node-version` file.
+     - Installing the npm dependencies using the `bahmutov/npm-install@v1`
+       action.
+     - Running the `npm run ci` command.
+1. Adds the `.github/workflows/ci.yml` file to the `.prettierignore` file.
+1. Updates the Visual Studio Code settings in the `.vscode/settings.json` file
+   to exclude the `.github` folder and the `.github/workflows/ci.yml` file from
+   the file explorer.
+
+## [onecfg-npm-github.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-npm-github.json)
+
+This onecfg file adds new steps to the existing GitHub Actions CI pipeline in
+the `.github/workflows/ci.yml` file. These steps run when a new release is
+published. The main aspects are:
+
+1. Triggers the CI on the `release` event with `published` type.
+1. Adds two new steps to the CI job that will run only if the event is a
+   release:
+   - The first step sets an environment variable `NPM_AUTH_TOKEN` with the value
+     from the GitHub Secrets and configures the npm registry with the
+     authentication token.
+   - The second step runs the `npm publish` command to publish the package to
+     the npm registry.
+
+These changes help you automate the process of publishing your package to the
+npm registry when a new release is published on GitHub. Make sure to add your
+npm authentication token to the GitHub Secrets as `NPM_AUTH_TOKEN`.
+
 ## [onecfg-preact.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-preact.json)
 
 This onecfg file sets up a TypeScript project to use Preact with React JSX
