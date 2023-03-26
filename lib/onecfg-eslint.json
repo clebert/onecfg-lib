@@ -26,6 +26,16 @@
               "error",
               {
                 "alphabetize": {"order": "asc"},
+                "groups": [
+                  "builtin",
+                  "external",
+                  "internal",
+                  "parent",
+                  "sibling",
+                  "index",
+                  "object",
+                  "type"
+                ],
                 "newlines-between": "never",
                 "warnOnUnassignedImports": true
               }
