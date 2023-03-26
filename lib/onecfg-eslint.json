@@ -43,7 +43,7 @@
             ],
             "no-shadow": "error",
             "object-shorthand": "error",
-            "prefer-const": "error",
+            "prefer-const": ["error", {"destructuring": "all"}],
             "quotes": ["error", "backtick"],
             "sort-imports": [
               "error",
