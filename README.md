@@ -55,6 +55,15 @@ Studio Code. The main aspects are:
 1. Excludes the `.gitignore` file from the file explorer in Visual Studio Code
    settings.
 
+## [onecfg-ignore-dist.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-ignore-dist.json)
+
+This onecfg file adds the `dist` folder to the ignore files of various tools in
+your project. The main aspects are:
+
+1. Adds the `dist` folder to the `.eslintignore`, `.gitignore`, and
+   `.prettierignore` files.
+1. Adds an `exclude` entry for the `dist` folder to the `tsconfig.json` file.
+
 ## [onecfg-jest.json](https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-jest.json)
 
 This onecfg file sets up a `jest.config.json` file for Jest testing
