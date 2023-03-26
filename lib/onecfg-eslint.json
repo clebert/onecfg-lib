@@ -27,16 +27,10 @@
               {
                 "alphabetize": {"order": "asc"},
                 "groups": [
-                  "builtin",
-                  "external",
-                  "internal",
-                  "parent",
-                  "sibling",
-                  "index",
-                  "object",
-                  "type"
+                  "type",
+                  ["builtin", "external", "parent", "sibling"]
                 ],
-                "newlines-between": "never",
+                "newlines-between": "always",
                 "warnOnUnassignedImports": true
               }
             ],
