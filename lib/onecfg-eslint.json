@@ -18,8 +18,8 @@
             "complexity": "error",
             "curly": "error",
             "eqeqeq": ["error", "always", {"null": "ignore"}],
-            "import/no-commonjs": "error",
             "import/extensions": ["error", "always", {"ignorePackages": true}],
+            "import/no-commonjs": "error",
             "import/no-duplicates": ["error", {"considerQueryString": true}],
             "import/no-extraneous-dependencies": "error",
             "import/order": [

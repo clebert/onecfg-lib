@@ -25,7 +25,10 @@
                 "@typescript-eslint/await-thenable": "error",
                 "@typescript-eslint/consistent-type-imports": [
                   "error",
-                  {"prefer": "type-imports", "fixStyle": "inline-type-imports"}
+                  {
+                    "prefer": "type-imports",
+                    "fixStyle": "separate-type-imports"
+                  }
                 ],
                 "@typescript-eslint/explicit-module-boundary-types": [
                   "error",
@@ -33,11 +36,16 @@
                 ],
                 "@typescript-eslint/no-duplicate-imports": "error",
                 "@typescript-eslint/no-floating-promises": "error",
+                "@typescript-eslint/no-import-type-side-effects": "error",
                 "@typescript-eslint/no-require-imports": "error",
                 "@typescript-eslint/no-shadow": ["error", {"hoist": "all"}],
                 "@typescript-eslint/promise-function-async": "error",
                 "@typescript-eslint/quotes": ["error", "backtick"],
                 "@typescript-eslint/require-await": "error",
+                "import/consistent-type-specifier-style": [
+                  "error",
+                  "prefer-top-level"
+                ],
                 "no-shadow": "off",
                 "quotes": "off"
               }
