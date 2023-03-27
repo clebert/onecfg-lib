@@ -196,14 +196,14 @@ Visual Studio Code settings for a Rust project. The main aspects are:
 1. Configures Rust formatting settings in the `rustfmt.toml` file, such as
    `edition`, `match_block_trailing_comma`, `max_width`, `newline_style`,
    `use_field_init_shorthand`, `use_small_heuristics`, and `use_try_shorthand`.
-1. Updates the `.editorconfig` file to specify an indentation size of `4` for
+1. Updates the `.editorconfig` file to specify an indentation size of `2` for
    Rust files (`\*.rs`).
 1. Adds the `target` folder to the `.gitignore` and `.prettierignore` files.
 1. Recommends Rust Analyzer and Even Better TOML extensions for Visual Studio
    Code in the `.vscode/extensions.json` file.
 1. Updates the Visual Studio Code settings in the `.vscode/settings.json` file
    to set Rust Analyzer as the default formatter for Rust files and Even Better
-   TOML for TOML files, enable format on save, set a ruler at 120 characters,
+   TOML for TOML files, enable format on save, set a ruler at 80 characters,
    exclude the `rustfmt.toml` file from the file explorer, and configure Rust
    Analyzer settings such as enabling clippy, check features, check on save, and
    disabling inlay hints.
