@@ -8,20 +8,14 @@
         "value": {
           "edition": "2021",
           "match_block_trailing_comma": true,
-          "max_width": 120,
+          "max_width": 80,
           "newline_style": "Unix",
+          "tab_spaces": 2,
           "use_field_init_shorthand": true,
           "use_small_heuristics": "Max",
           "use_try_shorthand": true
         },
         "priority": -1
-      }
-    ],
-    ".editorconfig": [
-      {
-        "value": {
-          "*.rs": {"indent_size": 4}
-        }
       }
     ],
     ".gitignore": [
@@ -50,7 +44,7 @@
           "[rust]": {"editor.defaultFormatter": "rust-lang.rust-analyzer"},
           "[toml]": {"editor.defaultFormatter": "tamasfe.even-better-toml"},
           "editor.formatOnSave": true,
-          "editor.rulers": [120],
+          "editor.rulers": [80],
           "files.exclude": {"rustfmt.toml": true},
           "rust-analyzer.check.allTargets": true,
           "rust-analyzer.check.command": "clippy",
