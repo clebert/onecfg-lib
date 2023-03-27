@@ -50,12 +50,23 @@
       {
         "value": {
           "extensionsToTreatAsEsm": [".ts", ".tsx"],
-          "moduleNameMapper": {"^(\\.{1,2}/.*)\\.js$": "$1"},
-          "transform": {"^.+\\.tsx?$": ["@swc/jest"]}
+          "moduleFileExtensions": [
+            "js",
+            "mjs",
+            "cjs",
+            "cts",
+            "jsx",
+            "ts",
+            "tsx",
+            "json",
+            "node"
+          ],
+          "moduleNameMapper": {"^(\\.{1,2}/.*)\\.c?js$": "$1"},
+          "transform": {"^.+\\.cts$": "@swc/jest", "^.+\\.tsx?$": "@swc/jest"}
         }
       },
       {
-        "value": {"testMatch": ["**/src/**/*.test.{ts,tsx}"]},
+        "value": {"testMatch": ["**/src/**/*.test.{cts,ts,tsx}"]},
         "array_merge": "replace"
       }
     ],

@@ -319,7 +319,7 @@ This onecfg file creates a new TypeScript configuration called
 configurations accordingly. The main aspects are:
 
 1. Defines the `tsconfig.eslint.json` file that extends the `tsconfig.base.json`
-   file and includes all `.cts`, `.mts`, `.ts`, and `.tsx` files.
+   file and includes all `.cts`, `.ts`, and `.tsx` files.
 1. Updates the ESLint configuration in the `.eslintrc.json` file:
    - Adds the `@typescript-eslint` plugin.
    - Adds new overrides and rules for TypeScript files, including some specific
