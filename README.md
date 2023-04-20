@@ -94,7 +94,7 @@ This onecfg file sets up a `.node-version` file and related settings for Node.js
 projects and other tools like Git, Prettier, and Visual Studio Code. The main
 aspects are:
 
-1. Defines the `.node-version` file containing the Node.js version (18).
+1. Defines the `.node-version` file containing the Node.js version (20).
 1. Adds the `node_modules` folder to the `.gitignore` file.
 1. Adds the `package-lock.json` file to the `.prettierignore` file.
 1. Recommends the `eg2.vscode-npm-script` extension for Visual Studio Code in

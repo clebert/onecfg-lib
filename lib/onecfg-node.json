@@ -5,7 +5,7 @@
   "patches": {
     ".node-version": [
       {
-        "value": "18",
+        "value": "20",
         "priority": -1
       }
     ],
