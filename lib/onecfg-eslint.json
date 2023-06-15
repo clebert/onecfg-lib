@@ -28,15 +28,7 @@
                 "alphabetize": {"order": "asc"},
                 "groups": [
                   "type",
-                  [
-                    "builtin",
-                    "external",
-                    "internal",
-                    "parent",
-                    "sibling",
-                    "index",
-                    "object"
-                  ]
+                  ["builtin", "external", "internal", "parent", "sibling", "index", "object"]
                 ],
                 "newlines-between": "always",
                 "warnOnUnassignedImports": true
@@ -57,10 +49,7 @@
             "object-shorthand": "error",
             "prefer-const": ["error", {"destructuring": "all"}],
             "quotes": ["error", "backtick"],
-            "sort-imports": [
-              "error",
-              {"ignoreDeclarationSort": true, "ignoreMemberSort": false}
-            ]
+            "sort-imports": ["error", {"ignoreDeclarationSort": true, "ignoreMemberSort": false}]
           },
           "overrides": [
             {

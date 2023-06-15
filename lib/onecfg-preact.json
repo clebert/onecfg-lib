@@ -10,11 +10,7 @@
     ".swcrc": [
       {
         "value": {
-          "jsc": {
-            "transform": {
-              "react": {"importSource": "preact", "runtime": "automatic"}
-            }
-          }
+          "jsc": {"transform": {"react": {"importSource": "preact", "runtime": "automatic"}}}
         }
       }
     ]
