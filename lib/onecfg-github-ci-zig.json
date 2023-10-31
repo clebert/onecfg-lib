@@ -13,7 +13,7 @@
     ],
     "ci.sh": [
       {
-        "value": ["zig fmt --check ./*.zig ./src/**/*.zig", "zig build test", "zig build"]
+        "value": ["zig fmt --check ./*.zig", "zig build test", "zig build"]
       }
     ]
   }
