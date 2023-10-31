@@ -14,6 +14,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -29,12 +32,15 @@
   ],
   "files.exclude": {
     ".editorconfig": true,
+    ".github": false,
+    ".github/workflows/ci.yml": false,
     ".gitignore": true,
     ".prettierignore": true,
     ".prettierrc.json": true,
     ".vscode": true,
     ".vscode/extensions.json": true,
-    ".vscode/settings.json": true
+    ".vscode/settings.json": true,
+    "ci.sh": false
   },
   "json.schemaDownload.enable": true,
   "json.schemas": [

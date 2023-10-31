@@ -1,6 +1,6 @@
 {
   "defines": {
-    "tsconfig.emit.json": {"format": "json"}
+    "tsconfig.emit.json": { "format": "json" }
   },
   "patches": {
     "tsconfig.emit.json": [
@@ -22,7 +22,7 @@
     ],
     "tsconfig.json": [
       {
-        "value": {"exclude": ["lib"]}
+        "value": { "exclude": ["lib"] }
       }
     ],
     ".eslintignore": [
@@ -42,7 +42,7 @@
     ],
     ".vscode/settings.json": [
       {
-        "value": {"files.exclude": {"tsconfig.emit.json": true}}
+        "value": { "files.exclude": { "tsconfig.emit.json": true } }
       }
     ]
   }

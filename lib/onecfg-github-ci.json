@@ -1,0 +1,57 @@
+{
+  "defines": {
+    ".github/workflows/ci.yml": { "format": "yaml" },
+    "ci.sh": { "format": "ignorefile" }
+  },
+  "patches": {
+    ".github/workflows/ci.yml": [
+      {
+        "value": {
+          "name": "CI",
+          "on": { "push": {}, "pull_request": {} },
+          "jobs": {
+            "CI": {
+              "runs-on": "ubuntu-latest",
+              "steps": [{ "uses": "actions/checkout@v4" }]
+            }
+          }
+        },
+        "priority": -1
+      },
+      {
+        "value": {
+          "jobs": {
+            "CI": {
+              "steps": [{ "run": "bash ./ci.sh" }]
+            }
+          }
+        },
+        "priority": 1
+      }
+    ],
+    "ci.sh": [
+      {
+        "value": [
+          "#!/bin/bash",
+          "set -e           # Terminates script at the first error",
+          "set -o pipefail  # Sets the exit status for pipes",
+          "set -u           # Triggers an error when an unset variable is called",
+          "set -o noclobber # Prevents from overwriting existing files"
+        ],
+        "priority": -1
+      }
+    ],
+    ".prettierignore": [
+      {
+        "value": ["/.github/workflows/ci.yml"]
+      }
+    ],
+    ".vscode/settings.json": [
+      {
+        "value": {
+          "files.exclude": { ".github": false, ".github/workflows/ci.yml": false, "ci.sh": false }
+        }
+      }
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 {
   "defines": {
-    ".swcrc": {"format": "json"}
+    ".swcrc": { "format": "json" }
   },
   "patches": {
     ".swcrc": [
       {
         "value": {
-          "jsc": {"target": "es2022"},
-          "module": {"type": "es6"},
+          "jsc": { "target": "es2022" },
+          "module": { "type": "es6" },
           "sourceMaps": true
         },
         "priority": -1
@@ -20,7 +20,7 @@
     ],
     ".vscode/settings.json": [
       {
-        "value": {"files.exclude": {".swcrc": true}}
+        "value": { "files.exclude": { ".swcrc": true } }
       }
     ]
   }

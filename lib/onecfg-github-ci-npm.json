@@ -1,0 +1,15 @@
+{
+  "patches": {
+    ".github/workflows/ci.yml": [
+      {
+        "value": {
+          "jobs": {
+            "CI": {
+              "steps": [{ "uses": "bahmutov/npm-install@v1" }]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

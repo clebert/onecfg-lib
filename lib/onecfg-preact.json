@@ -3,14 +3,14 @@
     "tsconfig.base.json": [
       {
         "value": {
-          "compilerOptions": {"jsx": "react-jsx", "jsxImportSource": "preact"}
+          "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" }
         }
       }
     ],
     ".swcrc": [
       {
         "value": {
-          "jsc": {"transform": {"react": {"importSource": "preact", "runtime": "automatic"}}}
+          "jsc": { "transform": { "react": { "importSource": "preact", "runtime": "automatic" } } }
         }
       }
     ]

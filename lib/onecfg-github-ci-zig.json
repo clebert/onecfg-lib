@@ -1,0 +1,20 @@
+{
+  "patches": {
+    ".github/workflows/ci.yml": [
+      {
+        "value": {
+          "jobs": {
+            "CI": {
+              "steps": [{ "uses": "goto-bus-stop/setup-zig@v2" }]
+            }
+          }
+        }
+      }
+    ],
+    "ci.sh": [
+      {
+        "value": ["zig fmt --check ./*.zig ./src/**/*.zig", "zig build test", "zig build"]
+      }
+    ]
+  }
+}

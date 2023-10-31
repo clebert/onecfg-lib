@@ -1,7 +1,7 @@
 {
   "defines": {
-    ".eslintignore": {"format": "ignorefile"},
-    ".eslintrc.json": {"format": "json"}
+    ".eslintignore": { "format": "ignorefile" },
+    ".eslintrc.json": { "format": "json" }
   },
   "patches": {
     ".eslintrc.json": [
@@ -9,7 +9,7 @@
         "value": {
           "root": true,
           "parserOptions": {
-            "ecmaFeatures": {"jsx": true},
+            "ecmaFeatures": { "jsx": true },
             "ecmaVersion": "latest",
             "sourceType": "module"
           },
@@ -17,15 +17,15 @@
           "rules": {
             "complexity": "error",
             "curly": "error",
-            "eqeqeq": ["error", "always", {"null": "ignore"}],
-            "import/extensions": ["error", "always", {"ignorePackages": true}],
+            "eqeqeq": ["error", "always", { "null": "ignore" }],
+            "import/extensions": ["error", "always", { "ignorePackages": true }],
             "import/no-commonjs": "error",
-            "import/no-duplicates": ["error", {"considerQueryString": true}],
+            "import/no-duplicates": ["error", { "considerQueryString": true }],
             "import/no-extraneous-dependencies": "error",
             "import/order": [
               "error",
               {
-                "alphabetize": {"order": "asc"},
+                "alphabetize": { "order": "asc" },
                 "groups": [
                   "type",
                   ["builtin", "external", "internal", "parent", "sibling", "index", "object"]
@@ -47,22 +47,22 @@
             ],
             "no-shadow": "error",
             "object-shorthand": "error",
-            "prefer-const": ["error", {"destructuring": "all"}],
+            "prefer-const": ["error", { "destructuring": "all" }],
             "quotes": ["error", "backtick"],
-            "sort-imports": ["error", {"ignoreDeclarationSort": true, "ignoreMemberSort": false}]
+            "sort-imports": ["error", { "ignoreDeclarationSort": true, "ignoreMemberSort": false }]
           },
           "overrides": [
             {
               "files": ["**/*.cjs", "**/*.md/*.cjs"],
-              "parserOptions": {"sourceType": "script"},
+              "parserOptions": { "sourceType": "script" },
               "rules": {
                 "import/no-commonjs": "off",
                 "import/extensions": "off",
                 "no-restricted-globals": "off"
               }
             },
-            {"files": ["**/*.mjs"], "parserOptions": {"sourceType": "module"}},
-            {"files": ["**/*.md"], "processor": "markdown/markdown"}
+            { "files": ["**/*.mjs"], "parserOptions": { "sourceType": "module" } },
+            { "files": ["**/*.md"], "processor": "markdown/markdown" }
           ]
         },
         "priority": -1
@@ -75,14 +75,14 @@
     ],
     ".vscode/extensions.json": [
       {
-        "value": {"recommendations": ["dbaeumer.vscode-eslint"]}
+        "value": { "recommendations": ["dbaeumer.vscode-eslint"] }
       }
     ],
     ".vscode/settings.json": [
       {
         "value": {
-          "editor.codeActionsOnSave": {"source.fixAll.eslint": true},
-          "files.exclude": {".eslintignore": true, ".eslintrc.json": true}
+          "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+          "files.exclude": { ".eslintignore": true, ".eslintrc.json": true }
         }
       }
     ]

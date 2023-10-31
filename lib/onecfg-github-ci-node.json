@@ -6,10 +6,10 @@
           "jobs": {
             "CI": {
               "steps": [
-                {"uses": "goto-bus-stop/setup-zig@v2"},
-                {"run": "zig fmt --check *.zig src/**/*.zig"},
-                {"run": "zig build test"},
-                {"run": "zig build"}
+                {
+                  "uses": "actions/setup-node@v3",
+                  "with": { "node-version-file": ".node-version" }
+                }
               ]
             }
           }

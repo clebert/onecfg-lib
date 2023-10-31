@@ -1,6 +1,6 @@
 {
   "defines": {
-    "jest.config.json": {"format": "json"}
+    "jest.config.json": { "format": "json" }
   },
   "patches": {
     "jest.config.json": [
@@ -11,7 +11,7 @@
           "restoreMocks": true,
           "collectCoverage": true,
           "coverageThreshold": {
-            "global": {"branches": 100, "functions": 100, "lines": 100, "statements": 100}
+            "global": { "branches": 100, "functions": 100, "lines": 100, "statements": 100 }
           }
         },
         "priority": -1
@@ -19,7 +19,7 @@
     ],
     "tsconfig.json": [
       {
-        "value": {"exclude": ["coverage"]}
+        "value": { "exclude": ["coverage"] }
       }
     ],
     ".eslintignore": [
@@ -39,7 +39,7 @@
     ],
     ".vscode/settings.json": [
       {
-        "value": {"files.exclude": {"jest.config.json": true}}
+        "value": { "files.exclude": { "jest.config.json": true } }
       }
     ]
   }

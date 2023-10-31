@@ -1,6 +1,6 @@
 {
   "defines": {
-    ".node-version": {"format": "text"}
+    ".node-version": { "format": "text" }
   },
   "patches": {
     ".node-version": [
@@ -21,12 +21,12 @@
     ],
     ".vscode/extensions.json": [
       {
-        "value": {"recommendations": ["eg2.vscode-npm-script"]}
+        "value": { "recommendations": ["eg2.vscode-npm-script"] }
       }
     ],
     ".vscode/settings.json": [
       {
-        "value": {"files.exclude": {".node-version": true}}
+        "value": { "files.exclude": { ".node-version": true } }
       }
     ]
   }

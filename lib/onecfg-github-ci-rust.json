@@ -1,0 +1,32 @@
+{
+  "patches": {
+    ".github/workflows/ci.yml": [
+      {
+        "value": {
+          "jobs": {
+            "CI": {
+              "env": {
+                "CARGO_TERM_COLOR": "always"
+              },
+              "steps": [
+                { "run": "rustup set auto-self-update disable" },
+                { "run": "rustup toolchain install stable --profile minimal" },
+                { "uses": "Swatinem/rust-cache@v2" }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "ci.sh": [
+      {
+        "value": [
+          "cargo fmt --all -- --check",
+          "cargo clippy --all-targets --all-features",
+          "cargo check --all-targets --profile=test",
+          "cargo test"
+        ]
+      }
+    ]
+  }
+}

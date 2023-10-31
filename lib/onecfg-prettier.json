@@ -1,7 +1,7 @@
 {
   "defines": {
-    ".prettierignore": {"format": "ignorefile"},
-    ".prettierrc.json": {"format": "json"}
+    ".prettierignore": { "format": "ignorefile" },
+    ".prettierrc.json": { "format": "json" }
   },
   "patches": {
     ".prettierignore": [
@@ -23,7 +23,7 @@
     ],
     ".eslintrc.json": [
       {
-        "value": {"extends": ["prettier"]}
+        "value": { "extends": ["prettier"] }
       }
     ],
     ".vscode/extensions.json": [
@@ -36,18 +36,18 @@
     ".vscode/settings.json": [
       {
         "value": {
-          "[css]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-          "[html]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-          "[javascript]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-          "[javascriptreact]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-          "[json]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-          "[markdown]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-          "[typescript]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-          "[typescriptreact]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-          "[yaml]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
+          "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+          "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+          "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+          "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+          "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+          "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+          "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+          "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+          "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
           "editor.formatOnSave": true,
           "editor.rulers": [100],
-          "files.exclude": {".prettierignore": true, ".prettierrc.json": true}
+          "files.exclude": { ".prettierignore": true, ".prettierrc.json": true }
         }
       }
     ]

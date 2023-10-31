@@ -17,7 +17,7 @@
     ],
     "tsconfig.json": [
       {
-        "value": {"exclude": ["dist"]}
+        "value": { "exclude": ["dist"] }
       }
     ]
   }

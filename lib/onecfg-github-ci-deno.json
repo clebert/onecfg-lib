@@ -1,0 +1,25 @@
+{
+  "patches": {
+    ".github/workflows/ci.yml": [
+      {
+        "value": {
+          "jobs": {
+            "CI": {
+              "steps": [{ "uses": "denoland/setup-deno@v1", "with": { "deno-version": "v1.x" } }]
+            }
+          }
+        }
+      }
+    ],
+    "ci.sh": [
+      {
+        "value": [
+          "deno fmt --check",
+          "deno lint",
+          "deno test --allow-read",
+          "deno bench --allow-read"
+        ]
+      }
+    ]
+  }
+}

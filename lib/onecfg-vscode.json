@@ -1,12 +1,12 @@
 {
   "defines": {
-    ".vscode/extensions.json": {"format": "json"},
-    ".vscode/settings.json": {"format": "json"}
+    ".vscode/extensions.json": { "format": "json" },
+    ".vscode/settings.json": { "format": "json" }
   },
   "patches": {
     ".vscode/extensions.json": [
       {
-        "value": {"recommendations": []},
+        "value": { "recommendations": [] },
         "priority": -1
       }
     ],
