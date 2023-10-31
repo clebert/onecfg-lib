@@ -32,15 +32,12 @@
   ],
   "files.exclude": {
     ".editorconfig": true,
-    ".github": false,
-    ".github/workflows/ci.yml": false,
     ".gitignore": true,
     ".prettierignore": true,
     ".prettierrc.json": true,
     ".vscode": true,
     ".vscode/extensions.json": true,
-    ".vscode/settings.json": true,
-    "ci.sh": false
+    ".vscode/settings.json": true
   },
   "json.schemaDownload.enable": true,
   "json.schemas": [
