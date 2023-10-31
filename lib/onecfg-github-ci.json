@@ -49,7 +49,7 @@
     ".vscode/settings.json": [
       {
         "value": {
-          "files.exclude": { ".github": false, ".github/workflows/ci.yml": false, "ci.sh": false }
+          "files.exclude": { ".github": true, ".github/workflows/ci.yml": true, "ci.sh": true }
         }
       }
     ]
