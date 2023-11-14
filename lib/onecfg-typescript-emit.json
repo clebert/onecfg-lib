@@ -9,12 +9,12 @@
           "extends": ["./tsconfig.base.json"],
           "include": ["src/**/*"],
           "compilerOptions": {
-            "rootDir": "src",
-            "declaration": true,
+            "composite": true,
+            "incremental": true,
             "inlineSources": true,
             "outDir": "lib",
-            "sourceMap": true,
-            "incremental": true
+            "rootDir": "src",
+            "sourceMap": true
           }
         },
         "priority": -1
@@ -32,7 +32,7 @@
     ],
     ".gitignore": [
       {
-        "value": ["/lib", "*.tsbuildinfo"]
+        "value": ["/lib", "/*.tsbuildinfo"]
       }
     ],
     ".prettierignore": [
