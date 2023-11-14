@@ -48,7 +48,7 @@
           "deno.enable": true,
           "deno.lint": true,
           "editor.rulers": [100],
-          "files.exclude": { "deno.json": true, "deno.lock": true }
+          "files.exclude": { "deno.json": true }
         }
       }
     ]
