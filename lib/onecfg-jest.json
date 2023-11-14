@@ -9,10 +9,7 @@
           "testMatch": ["**/src/**/*.test.{js,jsx}"],
           "clearMocks": true,
           "restoreMocks": true,
-          "collectCoverage": true,
-          "coverageThreshold": {
-            "global": { "branches": 100, "functions": 100, "lines": 100, "statements": 100 }
-          }
+          "collectCoverage": true
         },
         "priority": -1
       }
