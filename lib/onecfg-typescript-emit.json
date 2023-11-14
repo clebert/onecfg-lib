@@ -32,7 +32,7 @@
     ],
     ".gitignore": [
       {
-        "value": ["/lib", "/*.tsbuildinfo"]
+        "value": ["/lib", "*.tsbuildinfo"]
       }
     ],
     ".prettierignore": [
