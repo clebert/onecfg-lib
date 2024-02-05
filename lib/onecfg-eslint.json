@@ -81,7 +81,7 @@
     ".vscode/settings.json": [
       {
         "value": {
-          "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+          "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
           "files.exclude": { ".eslintignore": true, ".eslintrc.json": true }
         }
       }

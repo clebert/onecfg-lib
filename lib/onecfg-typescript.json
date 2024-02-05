@@ -75,7 +75,7 @@
     ".vscode/settings.json": [
       {
         "value": {
-          "editor.codeActionsOnSave": { "source.addMissingImports": true },
+          "editor.codeActionsOnSave": { "source.addMissingImports": "explicit" },
           "files.exclude": { "tsconfig.base.json": true, "tsconfig.json": true },
           "typescript.tsdk": "node_modules/typescript/lib"
         }
