@@ -16,6 +16,7 @@
       {
         "value": {
           "[zig]": { "editor.defaultFormatter": "ziglang.vscode-zig" },
+          "editor.rulers": [100],
           "zig.buildOnSave": true,
           "zig.initialSetupDone": true,
           "zig.zls.enableBuildOnSave": true,
