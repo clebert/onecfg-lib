@@ -1,78 +1,5 @@
 {
-  "defines": {
-    ".eslintignore": { "format": "ignorefile" },
-    ".eslintrc.json": { "format": "json" }
-  },
   "patches": {
-    ".eslintrc.json": [
-      {
-        "value": {
-          "root": true,
-          "parserOptions": {
-            "ecmaFeatures": { "jsx": true },
-            "ecmaVersion": "latest",
-            "sourceType": "module"
-          },
-          "plugins": ["import", "markdown"],
-          "rules": {
-            "complexity": "error",
-            "curly": "error",
-            "eqeqeq": ["error", "always", { "null": "ignore" }],
-            "import/extensions": ["error", "always", { "ignorePackages": true }],
-            "import/no-commonjs": "error",
-            "import/no-duplicates": ["error", { "considerQueryString": true }],
-            "import/no-extraneous-dependencies": "error",
-            "import/order": [
-              "error",
-              {
-                "alphabetize": { "order": "asc" },
-                "groups": [
-                  "type",
-                  ["builtin", "external", "internal", "parent", "sibling", "index", "object"]
-                ],
-                "newlines-between": "always",
-                "warnOnUnassignedImports": true
-              }
-            ],
-            "no-restricted-globals": [
-              "error",
-              {
-                "name": "__dirname",
-                "message": "Use \"dirname(fileURLToPath(import.meta.url))\" instead."
-              },
-              {
-                "name": "__filename",
-                "message": "Use \"fileURLToPath(import.meta.url)\" instead."
-              }
-            ],
-            "no-shadow": "error",
-            "object-shorthand": "error",
-            "prefer-const": ["error", { "destructuring": "all" }],
-            "quotes": ["error", "backtick"],
-            "sort-imports": ["error", { "ignoreDeclarationSort": true, "ignoreMemberSort": false }]
-          },
-          "overrides": [
-            {
-              "files": ["**/*.cjs", "**/*.md/*.cjs"],
-              "parserOptions": { "sourceType": "script" },
-              "rules": {
-                "import/no-commonjs": "off",
-                "import/extensions": "off",
-                "no-restricted-globals": "off"
-              }
-            },
-            { "files": ["**/*.mjs"], "parserOptions": { "sourceType": "module" } },
-            { "files": ["**/*.md"], "processor": "markdown/markdown" }
-          ]
-        },
-        "priority": -1
-      }
-    ],
-    ".prettierignore": [
-      {
-        "value": ["/.eslintrc.json"]
-      }
-    ],
     ".vscode/extensions.json": [
       {
         "value": { "recommendations": ["dbaeumer.vscode-eslint"] }
@@ -82,7 +9,7 @@
       {
         "value": {
           "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
-          "files.exclude": { ".eslintignore": true, ".eslintrc.json": true }
+          "eslint.experimental.useFlatConfig": true
         }
       }
     ]
