@@ -17,7 +17,7 @@ export default [
 
       'no-restricted-globals': [
         `error`,
-        { name: `__dirname`, message: `Use "dirname(fileURLToPath(import.meta.url))" instead.` },
+        { name: `__dirname`, message: `Use "fileURLToPath(import.meta.dirname)" instead.` },
         { name: `__filename`, message: `Use "fileURLToPath(import.meta.url)" instead.` },
       ],
 
