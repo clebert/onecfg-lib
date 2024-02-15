@@ -13,7 +13,6 @@ export default [
     rules: {
       'complexity': `error`,
       'eqeqeq': [`error`, `always`, { null: `ignore` }],
-      'no-duplicate-imports': `error`,
 
       'no-restricted-globals': [
         `error`,
