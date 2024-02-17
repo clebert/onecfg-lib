@@ -6,7 +6,8 @@ import ts from 'typescript-eslint';
 
 export default [
   { ignores: [`coverage/`, `dist/`, `lib/`] },
-  { languageOptions: { ecmaVersion: 2022, sourceType: `module`, globals: { ...globals.node } } },
+  { languageOptions: { ecmaVersion: 2022, sourceType: `module`, globals: { ...globals.browser } } },
+  { files: [`**/*.js`, `**/*.cjs`], languageOptions: { globals: { ...globals.node } } },
   js.configs.recommended,
 
   {
@@ -44,6 +45,7 @@ export default [
         '@typescript-eslint/no-import-type-side-effects': `error`,
         '@typescript-eslint/no-require-imports': `error`,
         '@typescript-eslint/no-shadow': [`error`, { hoist: `all` }],
+        '@typescript-eslint/no-unused-vars': `off`,
         '@typescript-eslint/promise-function-async': `error`,
         '@typescript-eslint/quotes': [`error`, `backtick`],
         'no-shadow': `off`,
