@@ -1,18 +1,23 @@
 // @ts-nocheck
 
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import * as tsParser from '@typescript-eslint/parser';
+import importPlugin from 'eslint-plugin-import';
 import globals from 'globals';
-import js from '@eslint/js';
-import ts from 'typescript-eslint';
 
 export default [
   { ignores: [`coverage/`, `dist/`, `lib/`] },
-  { languageOptions: { ecmaVersion: 2022, sourceType: `module`, globals: { ...globals.browser } } },
-  { files: [`**/*.js`, `**/*.cjs`], languageOptions: { globals: { ...globals.node } } },
-  js.configs.recommended,
 
   {
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: `module`,
+      globals: { ...globals.browser, ...globals.node },
+    },
+
     rules: {
       'complexity': `error`,
+      'curly': `error`,
       'eqeqeq': [`error`, `always`, { null: `ignore` }],
 
       'no-restricted-globals': [
@@ -25,46 +30,80 @@ export default [
       'object-shorthand': `error`,
       'prefer-const': [`error`, { destructuring: `all` }],
       'quotes': [`error`, `backtick`],
-      'sort-imports': `error`,
+      'sort-imports': [`error`, { ignoreDeclarationSort: true, ignoreMemberSort: false }],
     },
   },
 
-  ...[
-    ...ts.configs.recommendedTypeChecked,
-    { languageOptions: { parserOptions: { project: true } } },
+  {
+    plugins: { import: importPlugin },
 
-    {
-      rules: {
-        '@typescript-eslint/consistent-type-imports': `error`,
-        '@typescript-eslint/no-explicit-any': `off`,
+    rules: {
+      'import/consistent-type-specifier-style': [`error`, `prefer-top-level`],
+      'import/extensions': [`error`, `always`, { ignorePackages: true }],
+      'import/no-commonjs': `error`,
+      'import/no-duplicates': [`error`, { considerQueryString: true }],
+      'import/no-extraneous-dependencies': `error`,
 
-        '@typescript-eslint/explicit-module-boundary-types': [
-          `error`,
-          { allowDirectConstAssertionInArrowFunctions: true },
-        ],
+      'import/order': [
+        `error`,
+        {
+          'alphabetize': { order: `asc` },
 
-        '@typescript-eslint/no-import-type-side-effects': `error`,
-        '@typescript-eslint/no-require-imports': `error`,
-        '@typescript-eslint/no-shadow': [`error`, { hoist: `all` }],
-        '@typescript-eslint/no-unsafe-argument': `off`,
-        '@typescript-eslint/no-unsafe-assignment': `off`,
-        '@typescript-eslint/no-unsafe-call': `off`,
-        '@typescript-eslint/no-unsafe-member-access': `off`,
-        '@typescript-eslint/no-unsafe-return': `off`,
-        '@typescript-eslint/no-unused-vars': `off`,
-        '@typescript-eslint/promise-function-async': `error`,
-        '@typescript-eslint/quotes': [`error`, `backtick`],
-        'no-shadow': `off`,
-        'quotes': `off`,
-      },
+          'groups': [
+            `type`,
+            [`builtin`, `external`, `internal`, `parent`, `sibling`, `index`, `object`],
+          ],
+
+          'newlines-between': `always`,
+          'warnOnUnassignedImports': true,
+        },
+      ],
     },
-  ].map((config) => ({ ...config, files: [`**/*.ts`, `**/*.tsx`, `**/*.mts`, `**/*.cts`] })),
+  },
+
+  {
+    files: [`**/*.ts`, `**/*.tsx`, `**/*.mts`, `**/*.cts`],
+    plugins: { '@typescript-eslint': tsPlugin },
+
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: { project: true, tsconfigRootDir: import.meta.dirname },
+    },
+
+    rules: {
+      '@typescript-eslint/await-thenable': `error`,
+
+      '@typescript-eslint/consistent-type-imports': [
+        `error`,
+        { prefer: `type-imports`, fixStyle: `separate-type-imports` },
+      ],
+
+      '@typescript-eslint/explicit-module-boundary-types': [
+        `error`,
+        { allowDirectConstAssertionInArrowFunctions: true },
+      ],
+
+      '@typescript-eslint/no-floating-promises': `error`,
+      '@typescript-eslint/no-import-type-side-effects': `error`,
+      '@typescript-eslint/no-require-imports': `error`,
+      '@typescript-eslint/no-shadow': [`error`, { hoist: `all` }],
+      'no-shadow': `off`,
+      '@typescript-eslint/promise-function-async': `error`,
+      '@typescript-eslint/quotes': [`error`, `backtick`],
+      'quotes': `off`,
+      '@typescript-eslint/require-await': `error`,
+      'require-await': `off`,
+    },
+  },
 
   {
     files: [`**/*.cjs`, `**/*.cts`],
+
     rules: {
-      '@typescript-eslint/no-require-imports': `off`,
       'no-restricted-globals': `off`,
+      'import/extensions': `off`,
+      'import/no-commonjs': `off`,
+      '@typescript-eslint/no-require-imports': `off`,
     },
   },
 ];
