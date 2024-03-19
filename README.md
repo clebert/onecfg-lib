@@ -5,17 +5,36 @@
 
 ## Configuring ESLint
 
-Since ESLint has switched to a JavaScript-only configuration format, it currently cannot be created
-with onecfg. Therefore, I am sharing an ESLint configuration [here](eslint.config.js), which has to
-be downloaded into the respective project:
+`eslint.config.js`:
 
-```sh
-curl -O https://raw.githubusercontent.com/clebert/onecfg-lib/main/eslint.config.js
+```js
+import { createConfigs } from 'onecfg-lib-eslint';
+
+export default [
+  { ignores: [`dist/`, `lib/`] },
+
+  ...createConfigs({
+    browser: true,
+    node: true,
+  }),
+];
 ```
 
-The [ESLint onecfg file](lib/onecfg-eslint.json) only takes care of the VSCode integration and
-should be added to your project's `onecfg.json` file together with the
-[VSCode onecfg file](lib/onecfg-vscode.json):
+`package.json`:
+
+```json
+{
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "onecfg-lib-eslint": "^1.0.0"
+  }
+}
+```
+
+`onecfg.json`:
 
 ```json
 {
@@ -23,18 +42,5 @@ should be added to your project's `onecfg.json` file together with the
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-eslint.json",
     "https://raw.githubusercontent.com/clebert/onecfg-lib/main/lib/onecfg-vscode.json"
   ]
-}
-```
-
-Additionally, the following npm packages need to be imported into the `package.json`:
-
-```json
-{
-  "devDependencies": {
-    "@eslint/js": "*",
-    "eslint": "*",
-    "globals": "*",
-    "typescript-eslint": "*"
-  }
 }
 ```
