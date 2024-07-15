@@ -105,6 +105,7 @@
           "editor.defaultFormatter": "biomejs.biome",
           "editor.formatOnSave": true,
           "editor.rulers": [100],
+          "files.exclude": { "biome.json": true },
           "javascript.preferences.importModuleSpecifierEnding": "js",
           "typescript.preferences.importModuleSpecifierEnding": "js",
           "typescript.preferences.preferTypeOnlyAutoImports": true

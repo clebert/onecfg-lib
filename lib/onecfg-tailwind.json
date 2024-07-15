@@ -25,6 +25,11 @@
           }
         }
       }
+    ],
+    ".vscode/settings.json": [
+      {
+        "value": { "files.exclude": { "tailwind.config.cjs": true } }
+      }
     ]
   }
 }
