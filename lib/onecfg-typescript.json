@@ -10,7 +10,14 @@
           "compilerOptions": {
             "allowUnreachableCode": false,
             "allowUnusedLabels": false,
+            "esModuleInterop": true,
             "exactOptionalPropertyTypes": true,
+            "forceConsistentCasingInFileNames": true,
+            "isolatedModules": true,
+            "jsx": "react",
+            "module": "nodenext",
+            "moduleResolution": "nodenext",
+            "noErrorTruncation": true,
             "noFallthroughCasesInSwitch": true,
             "noImplicitOverride": true,
             "noImplicitReturns": true,
@@ -18,17 +25,11 @@
             "noUncheckedIndexedAccess": true,
             "noUnusedLocals": true,
             "noUnusedParameters": true,
+            "pretty": true,
+            "skipLibCheck": true,
             "strict": true,
-            "module": "node16",
-            "moduleResolution": "node16",
-            "esModuleInterop": true,
-            "forceConsistentCasingInFileNames": true,
-            "isolatedModules": true,
-            "verbatimModuleSyntax": true,
-            "jsx": "react",
             "target": "es2022",
-            "noErrorTruncation": true,
-            "pretty": true
+            "verbatimModuleSyntax": true
           }
         },
         "priority": -1
@@ -40,12 +41,17 @@
           "extends": ["./tsconfig.base.json"],
           "include": ["**/*"],
           "compilerOptions": {
-            "resolveJsonModule": true,
+            "checkJs": true,
             "noEmit": true,
-            "checkJs": true
+            "resolveJsonModule": true
           }
         },
         "priority": -1
+      }
+    ],
+    "biome.json": [
+      {
+        "value": { "formatter": { "ignore": ["tsconfig.base.json", "tsconfig.json"] } }
       }
     ],
     "jest.config.json": [

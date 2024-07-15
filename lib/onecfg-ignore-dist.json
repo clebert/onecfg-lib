@@ -15,6 +15,15 @@
         "value": ["/dist"]
       }
     ],
+    "biome.json": [
+      {
+        "value": {
+          "organizeImports": { "ignore": ["dist/**"] },
+          "formatter": { "ignore": ["dist/**"] },
+          "linter": { "ignore": ["dist/**"] }
+        }
+      }
+    ],
     "tsconfig.json": [
       {
         "value": { "exclude": ["dist"] }

@@ -33,6 +33,11 @@
       {
         "value": ["/.vscode/extensions.json", "/.vscode/settings.json"]
       }
+    ],
+    "biome.json": [
+      {
+        "value": { "formatter": { "ignore": [".vscode/**"] } }
+      }
     ]
   }
 }
