@@ -1,0 +1,30 @@
+{
+  "defines": {
+    "tailwind.config.cjs": { "format": "text" }
+  },
+  "patches": {
+    "tailwind.config.cjs": [
+      {
+        "value": "module.exports = {\n  content: [\"./src/**/*.{ts,tsx}\"],\n};",
+        "priority": -1
+      }
+    ],
+    "biome.json": [
+      {
+        "value": {
+          "linter": {
+            "rules": {
+              "nursery": {
+                "useSortedClasses": {
+                  "level": "error",
+                  "fix": "safe",
+                  "options": { "functions": ["tw"] }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
